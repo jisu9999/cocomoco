@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poiret+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +13,98 @@ a {
   color: #333;
   text-decoration: none;
 }
-.wrap{
-  
+.wrap {
+  width: 100%;
+  /* background-color: antiquewhite; */
 }
-.header{
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: thistle; */
+}
 
+.logo {
+  width: 10%;
+  height: 100%;
+  padding-top: 25px;
+  /* background-color: aquamarine; */
+}
+.logo a img {
+  width: 100%;
+}
+.nav {
+  width: 60%;
+  position: relative;
+  /* background-color: blue; */
+  height: 100%;
+  margin-right: 280px;
+}
+.gnb {
+  width: 100%;
+  line-height: 80px;
+  margin: auto;
+  display: flex;
+  /* background-color: aqua; */
+}
+.gnb > li {
+  position: relative;
+  width: calc(100% / 7);
+  text-align: center;
+}
+.gnb > li:hover .depth2 {
+  display: block;
+}
+.gnb > li > a {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Josefin Sans", serif;
+}
+.header_right_list {
+  width: 15%;
+  display: flex;
+  gap: 20px;
+  line-height: 80px;
+}
+.header_right_list > li > a {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Josefin Sans", serif;
+}
+.header_right_list li:last-child a {
+  margin-right: 0;
+}
+.header_right_list li a img {
+  height: 14px;
+}
+.depth2 {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  border: 1px solid #333;
+  padding: 20px 0px;
+  z-index: 999;
+}
+.depth2 li {
+  width: 165px;
+  line-height: 2px;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 12px;
+  font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif !important;
+}
+/* 이미지 슬라이드 */
+.main_slide {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-color: burlywood;
+}
+
+.main_slide .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
