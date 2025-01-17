@@ -73,7 +73,7 @@ a {
   font-family: "Josefin Sans", serif;
 }
 .header_right_list li:last-child a {
-  margin-right: 0;
+  margin-right: 0px;
 }
 .header_right_list li a img {
   height: 14px;
@@ -96,15 +96,98 @@ a {
   font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif !important;
 }
 /* 이미지 슬라이드 */
-.main_slide {
+.mainSlide {
   position: relative;
   width: 100%;
-  height: 900px;
-  background-color: burlywood;
+  /* height: 700px; */
+  height: 36.45vw;
+  /* background-color: burlywood; */
 }
-
-.main_slide .swiper-wrapper .swiper-slide a img {
+.mainSlide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  background-color: #fff;
+}
+.swiper-scrollbar-drag {
+  width: calc(100% / 3);
+}
+/* middle 이미지 박스 */
+.middle {
+  position: relative;
+  display: block;
+}
+.box {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  /* height: 740px; */
+  height: 38.54vw;
+  overflow: hidden;
+  /* background-color: aqua; */
+}
+.box li {
+  width: calc(100% / 3);
+
+  /* height: 100%; */
+}
+.box li a img {
+  width: 100%;
+  object-fit: cover;
+}
+.box li a {
+  display: block;
+  position: relative;
+}
+.box li a span {
+  position: absolute;
+  z-index: 999;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 20%; */
+  min-width: 110px;
+  /* padding: 10px 0; */
+  font-family: "Josefin Sans", serif;
+  font-size: 60px;
+  /* background-color: rgba(0,0,0,0.5); */
+  color: #fff;
+  text-align: center;
+}
+.title {
+  width: 100%;
+  height: 365px;
+  /* background-color: yellowgreen; */
+}
+.title h3 {
+  text-align: center;
+  line-height: 500px;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Josefin Sans", serif;
+  color: #222;
+}
+/* products */
+.product-container{
+  position: relative;
+  width: 100%;
+}
+.prdList-grid {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+}
+.thumbnail a img{
+  width: 100%;
 }
