@@ -1,5 +1,5 @@
 window.onload = function () {
-  const swiper = new Swiper(".mainSlide", {
+  const swiper1 = new Swiper(".mainSlide", {
     loop: true,
     scrollbar: {
       el: ".swiper-scrollbar",
@@ -8,6 +8,14 @@ window.onload = function () {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+  });
+  const swiper2 = new Swiper(".instaSlide", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 };
