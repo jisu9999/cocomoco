@@ -122,7 +122,6 @@ a {
   width: calc(100% / 3);
   background-color: #fff;
   opacity: 0.5;
-
 }
 /* middle 이미지 박스 */
 .middle {
@@ -231,10 +230,14 @@ a {
   font-family: "Josefin Sans", serif;
 }
 /* 더보기 버튼 */
-.more-btn{
-  width: 7%;
-  padding: 15px 5px;
-  border: 1px solid #333;
-  border-radius: 0%;
+.more-btn {
+  width: 100%;
   text-align: center;
+  margin-top: 30px;
+}
+#more-btn {
+  padding: 20px 50px;
+  border: 1px solid #4f4f4f;
+  border-radius: 30px;
+  background-color: #fff;
 }
