@@ -54,6 +54,9 @@ a {
   width: calc(100% / 7);
   text-align: center;
 }
+.gnb > li:hover > a {
+  opacity: 0.5;
+}
 .gnb > li:hover .depth2 {
   display: block;
 }
@@ -72,6 +75,9 @@ a {
   font-size: 14px;
   font-weight: bold;
   font-family: "Josefin Sans", serif;
+}
+.header_right_list > li:hover > a {
+  opacity: 0.5;
 }
 .header_right_list li:last-child a {
   margin-right: 0px;
@@ -156,8 +162,8 @@ a {
 }
 .box li a span {
   position: absolute;
-  z-index: 999;
-  bottom: 13%;
+  /* z-index: 999; */
+  bottom: 6%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -235,6 +241,7 @@ a {
   width: 100%;
   text-align: center;
   margin-top: 50px;
+  /* background-color: yellowgreen; */
 }
 #more-btn {
   position: relative;
@@ -242,6 +249,7 @@ a {
   border: 1px solid #888;
   border-radius: 30px;
   background-color: #fff;
+  cursor: pointer;
 }
 #more-btn span {
   font-family: "Josefin Sans", serif;
@@ -253,31 +261,109 @@ a {
 .insta {
   width: 100%;
   margin-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   background-color: #fff6e6;
 }
-.insta h3 {
-  text-align: center;
+.insta-inner {
+  width: 70%;
+  margin: 0 auto;
+}
+.insta-inner .insta-title {
+  width: 100%;
+  height: 200px;
+  /* background-color: thistle; */
+}
+.insta-inner .insta-title h3 {
   font-size: 35px;
   font-weight: 400;
   font-family: "Josefin Sans", serif;
+  text-align: center;
   color: #4f4f4f;
-  padding-top: 180px;
+  padding-top: 110px;
 }
 .instaSlide {
   position: relative;
-  width: 70%;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
-
+.insta_sw_wrap {
+  position: relative;
+}
+.instaSlide .swiper-slide {
+  aspect-ratio: 1;
+}
 .instaSlide .swiper-slide a img {
+  display: block;
   width: 100%;
-  height: 100%;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   position: absolute;
-  top: -10px;
+  top: 20px;
   font-size: 30px;
+  color: #4f4f4f;
+}
+.swiper-button-next::after {
+  right: -50px;
+}
+.swiper-button-prev::after {
+  left: -50px;
+}
+/* 하단 */
+.footer {
+  position: relative;
+  display: block;
+  padding: 60px 80px;
+  background-color: #6090bd;
+}
+.footer-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner .footer-left-top {
+  padding-bottom: 30px;
+}
+.footer-inner .footer-left-top span {
+  position: relative;
+  font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
+  font-size: 12px;
   color: #fff;
+  line-height: 2;
+  margin-right: 20px;
+}
+.footer-inner .footer-left-bottom span {
+  position: relative;
+  font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
+  font-size: 11px;
+  color: #fff;
+  line-height: 2;
+  margin-right: 20px;
+}
+.footer-inner .footer-left-bottom span a {
+  display: inline-block;
+  color: #fff;
+}
+.footer-menu {
+  display: flex;
+  gap: 40px;
+  padding-top: 15px;
+}
+.footer-menu li {
+  font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
+  font-size: 11px;
+  color: #fff;
+}
+.footer-menu li a {
+  font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
+  font-size: 11px;
+  color: #fff;
+}
+.footer-inner .footer-right ul li a {
+  position: relative;
+  font-family: "Josefin Sans", serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
 }
