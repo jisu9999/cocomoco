@@ -17,21 +17,29 @@ window.onload = function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    loop: true,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
     breakpoints: {
-        
       768: {
-        slidesPerView: 2.5,  //브라우저가 768보다 클 때
+        slidesPerView: 2.5, //브라우저가 768보다 클 때
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 3.5,  //브라우저가 1024보다 클 때
+        slidesPerView: 3.5, //브라우저가 1024보다 클 때
         spaceBetween: 20,
       },
     },
+  });
+  const headerScroll = document.querySelector("header");
+  window.addEventListener("scroll", function () {
+    // navScroll.classList.add("scrolled")
+    // console.log("스크롤 y 값 :", window.scrollY);
+    if (window.scrollY > 740) {
+      headerScroll.classList.add("scrolled");
+    } else {
+      headerScroll.classList.remove("scrolled");
+    }
   });
 };

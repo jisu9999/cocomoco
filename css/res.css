@@ -1,0 +1,35 @@
+@charset "utf-8"; /* 반응형 */
+
+@media screen and (max-width: 1110px) {
+  .nav , .gnb{
+    display: none;
+  }
+}
+@media screen and (max-width: 968px) {
+  .login {
+    display: none;
+  }
+  .mbHam {
+    width: 20px !important;
+    display: block !important;
+  }
+  .mbHam img {
+    width: 100%;
+  }
+  .header_left {
+    width: 50% !important;
+
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header_left {
+    width: 40% !important;
+
+    justify-content: space-between;
+  }
+  .header .inner {
+    width: 60%;
+    justify-content: space-between !important;
+  }
+}
