@@ -39,15 +39,16 @@
       <!-- 상단 -->
       <header class="header">
         <div class="inner">
-          <div class="header_left">
-            <!-- 로고 -->
-            <a href="#" class="mbHam"><img src="images/menu bar_tablet.png" alt="메뉴바" /></a>
-            <div class="logo">
-              <a href="#index.html">
-                <img src="images/cocomoco_logo_white.png" alt="코코모코 로고" />
-              </a>
+          <!-- pc-header -->
+          <div class="pc-header">
+            <div class="header_left">
+              <!-- 로고 -->
+              <div class="logo">
+                <a href="#index.html">
+                  <img src="images/cocomoco_logo_white.png" alt="코코모코 로고" />
+                </a>
+              </div>
             </div>
-
             <!-- 메뉴 -->
             <nav class="nav">
               <ul class="gnb">
@@ -120,25 +121,39 @@
                 </li>
               </ul>
             </nav>
+            <div class="header_right">
+              <ul class="header_right_list">
+                <li class="login"><a href="#">LOGIN</a></li>
+                <li>
+                  <a href="#"><img src="images/glass_white.png" alt="glass 아이콘" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/user_tablet.png" alt="user 아이콘" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/bag_tablet.png" alt="bag 아이콘" /></a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div class="header_right">
-            <ul class="header_right_list">
-              <li class="login"><a href="#">LOGIN</a></li>
-              <li>
-                <a href="#"><img src="images/glass_white.png" alt="glass 아이콘" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/user_tablet.png" alt="user 아이콘" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/bag_tablet.png" alt="bag 아이콘" /></a>
-              </li>
-            </ul>
+          <!-- mb-header -->
+          <div class="mb-header">
+            <div class="mb-header-list">
+              <div class="mb-left-con">
+                <a href="#"><img src="images/menu bar_tablet.png" alt="메뉴바" /></a>
+              </div>
+              <div class="mb-logo">
+                <a href="#"><img src="images/cocomoco_logo_white.png" alt="coconoco로고" /></a>
+              </div>
+              <div class="mb-right-con">
+                <a href="#"><img src="images/glass_tablet.png" alt="glass아이콘" /></a>
+                <a href="#"><img src="images/user_tablet.png" alt="user아이콘" /></a>
+                <a href="#"><img src="images/bag_tablet.png" alt="bag아이콘" /></a>
+              </div>
+            </div>
           </div>
         </div>
       </header>
-
       <!-- 이미지 슬라이드 -->
       <div class="swiper mainSlide">
         <ul class="swiper-wrapper">
@@ -555,7 +570,7 @@
         </div>
       </div>
       <!-- 하단 -->
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div class="footer-inner">
           <!-- 하단 왼쪽 -->
           <div class="footer-left">
@@ -602,7 +617,7 @@
             </ul>
           </div>
         </div>
-      </footer> -->
+      </footer>
     </div>
   </body>
 </html>

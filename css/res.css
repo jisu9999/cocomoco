@@ -1,35 +1,33 @@
 @charset "utf-8"; /* 반응형 */
-
-@media screen and (max-width: 1110px) {
-  .nav , .gnb{
-    display: none;
-  }
+@media screen and (max-width: 1050px) {
+.pc-header{
+  display: none !important;
+ }
+ .mb-header{
+  display: block !important;
+ }
 }
-@media screen and (max-width: 968px) {
-  .login {
-    display: none;
-  }
-  .mbHam {
-    width: 20px !important;
-    display: block !important;
-  }
-  .mbHam img {
-    width: 100%;
-  }
-  .header_left {
-    width: 50% !important;
-
-    justify-content: space-between;
-  }
+@media screen and (max-width: 900px){
+ 
 }
 @media screen and (max-width: 600px) {
-  .header_left {
-    width: 40% !important;
-
-    justify-content: space-between;
+  .footer-inner {
+    flex-direction: column;
   }
-  .header .inner {
-    width: 60%;
-    justify-content: space-between !important;
+  .footer-inner .footer-right ul li a {
+    margin-top: 10px;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+  .footer-menu {
+    gap: 10px !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .footer {
+    padding: 20px 40px !important;
+  }
+  .footer-inner .footer-left-top span {
+    margin: 0 !important;
   }
 }

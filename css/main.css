@@ -20,9 +20,6 @@ a {
   position: relative;
   /* background-color: antiquewhite; */
 }
-.mbHam {
-  display: none;
-}
 .header {
   width: 100%;
   height: 80px;
@@ -30,27 +27,25 @@ a {
   position: fixed;
   /* background-color: #fff6e6; */
 }
-.header .inner {
+.header .inner .pc-header {
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
+  /* justify-content: space-between; */
+  /* padding: 0 50px; */
   /* background-color: thistle; */
 }
 .header_left {
-  /* width: 70%; */
-  display: flex;
-  align-items: center;
-  gap: 5%;
+ width: 15%;
+ margin: 0 50px 0 40px;
+ /* background-color: yellowgreen; */
 }
-.logo {
-  width: 8%;
-  min-width: 110px;
-  /* background-color: aquamarine; */
+.logo{
+  width: 100%;
+  min-width: 115px;
+  height: 100%;
 }
-
 .logo a img {
   width: 100%;
 }
@@ -83,7 +78,7 @@ a {
   display: block;
 }
 .gnb > li > a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   font-family: "Josefin Sans", serif;
   color: #fff;
@@ -92,6 +87,7 @@ a {
   width: 15%;
   max-width: 150px;
   min-width: 100px;
+  margin-right: 40px;
   /* background-color: red; */
 }
 .header_right_list {
@@ -102,7 +98,7 @@ a {
   justify-content: space-between;
 }
 .header_right_list > li > a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   font-family: "Josefin Sans", serif;
   color: #fff;
@@ -134,45 +130,32 @@ a {
   font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif !important;
 }
 /* 모바일용 상단 */
-.mb-header {
-  /* width: 100%; */
-  /* height: 60px; */
-  /* display: none; */
-  /* background-color: yellowgreen; */
-  /* position: fixed; */
-  /* z-index: 9999999999; */
+.mb-header{
+  display: none;
+  width: 100%;
+  height: 65px;
+  background-color: yellowgreen;
 }
-.mb-header-inner {
-  /* width: 100%;
-  height: 100%;
-  max-width: 740px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto; */
-  /* background-color: #6090bd; */
+.mb-left-con{
+  width: 4%;
 }
-/* 
-.left-con a img {
-  height: 20px;
-  width: auto;
+.mb-left-con a img{
+  width: 100%;
 }
-.mb-logo {
+.mb-logo{
   width: 20%;
-  text-align: center;
+  height: 100%;
+  background-color: violet;
 }
-.mb-logo a img {
-  height: 15px;
-  width: auto;
+.mb-logo a img{
+  width: 100%;
 }
-.right-con {
+.mb-header-list{
   display: flex;
-  gap: 25px;
 }
-.right-con a img {
-  height: 20px;
-  width: auto;
-} */
+.mb-right-con{
+  display: flex;
+}
 /* 이미지 슬라이드 */
 .mainSlide {
   position: relative;
