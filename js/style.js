@@ -22,15 +22,31 @@ window.onload = function () {
       disableOnInteraction: false,
     },
     breakpoints: {
-      768: {
+      880: {
         slidesPerView: 2.5, //브라우저가 768보다 클 때
         spaceBetween: 20,
       },
-      1024: {
+      1050: {
         slidesPerView: 3.5, //브라우저가 1024보다 클 때
         spaceBetween: 20,
       },
     },
+  });
+  const swiper3 = new Swiper(".mbSlide", {
+    loop: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+    autoplay: {
+      delay: 2200,
+      disableOnInteraction: false,
+    },
+  });
+  const swiper = new Swiper(".mbWinterSwiper", {
+    slidesPerView: 3.5,
+    spaceBetween: 20,
+    centeredSlides: false,
   });
   const headerScroll = document.querySelector("header");
   window.addEventListener("scroll", function () {

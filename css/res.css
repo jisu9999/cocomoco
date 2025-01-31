@@ -1,14 +1,45 @@
 @charset "utf-8"; /* 반응형 */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1920px){
+  .mbSlide, .mbWinterSwiper, .mb-product-container ,.mb-nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px){
+  .header_right{
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
 .pc-header{
   display: none !important;
  }
  .mb-header{
   display: block !important;
  }
-}
-@media screen and (max-width: 900px){
- 
+ .header.scrolled{
+  display: none;
+ }
+ .mb-nav{
+  display: block;
+ }
+ .mainSlide{
+  display: none;
+ }
+ .mbSlide, .mbWinterSwiper, .mb-product-container{
+  display: block;
+ }
+ .product-container, .more-btn{
+  display: none;
+ }
+ .box{
+  margin-top: 50px !important;
+ }
+ .title{
+  height: 220px !important;
+ }
+ .title h3{
+  padding-top: 130px !important;
+ }
 }
 @media screen and (max-width: 600px) {
   .footer-inner {
