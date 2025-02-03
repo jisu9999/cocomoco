@@ -52,7 +52,7 @@ window.onload = function () {
   window.addEventListener("scroll", function () {
     // navScroll.classList.add("scrolled")
     // console.log("스크롤 y 값 :", window.scrollY);
-    if (window.scrollY > 740) {
+    if (window.scrollY > 680) {
       headerScroll.classList.add("scrolled");
     } else {
       headerScroll.classList.remove("scrolled");

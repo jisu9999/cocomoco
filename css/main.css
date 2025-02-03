@@ -37,11 +37,11 @@ a {
   /* background-color: thistle; */
 }
 .header_left {
- width: 15%;
- margin: 0 50px 0 40px;
- /* background-color: yellowgreen; */
+  width: 15%;
+  margin: 0 50px 0 40px;
+  /* background-color: yellowgreen; */
 }
-.logo{
+.logo {
   width: 100%;
   min-width: 115px;
   height: 100%;
@@ -129,80 +129,81 @@ a {
   font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif !important;
 }
 /* 모바일용 상단 */
-.mb-header{
+.mb-header {
   display: none;
   width: 100%;
   height: 65px;
   /* background-color: yellowgreen; */
 }
-.mb-left-con{
+.mb-left-con {
   width: 25px;
 }
-.mb-left-con a img{
+.mb-left-con a img {
   width: 100%;
 }
-.mb-logo{
+.mb-logo {
   width: 20%;
   /* background-color: violet; */
 }
-.mb-logo a img{
+.mb-logo a img {
   width: 100%;
 }
-.mb-header-list{
+.mb-header-list {
   display: flex;
   justify-content: space-between;
   padding: 25px 30px;
 }
-.mb-right-con{
+.mb-right-con {
   width: 110px;
   display: flex;
   gap: 25px;
 }
-.mb-right-con a img{
+.mb-right-con a img {
   width: 100%;
 }
-.mb-nav{
+.mb-nav {
   position: fixed;
   top: 0;
   left: -500px;
   width: 450px;
   height: 100vh;
   background-color: #fff6e6;
+  overflow: hidden;
 }
-.mb-nav .gnb{
+.mb-nav .gnb {
   display: flex;
   flex-direction: column;
 }
-.mb-nav .gnb > li:first-child{
+.mb-nav .gnb > li:first-child {
   border-bottom: 1px solid #b6b6b6;
 }
-.mb-nav .gnb > li:first-child > a{
+.mb-nav .gnb > li:first-child > a {
   padding-top: 100px;
 }
-.mb-nav .gnb > li > a{
+.mb-nav .gnb > li > a {
   font-size: 18px;
   font-weight: 500;
   text-align: left;
   padding: 30px 50px;
   color: #4f4f4f;
 }
-.mb-depth2{
+.mb-depth2 {
   display: none;
 }
-.mb-depth2 > li > a{
+.mb-depth2 > li > a {
   display: block;
   text-align: left;
   font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif !important;
   padding: 5px 50px;
 }
-.close-menu{
+.close-menu {
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 400px;
   cursor: pointer;
 }
-.xi-close{
-  font-size: 30px;
+.xi-close {
+  font-size: 25px !important;
   color: #4f4f4f;
 }
 /* 이미지 슬라이드 */
@@ -213,7 +214,8 @@ a {
   height: 44.79vw;
   /* background-color: burlywood; */
 }
-.mainSlide img, .mbSlide img {
+.mainSlide img,
+.mbSlide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -234,10 +236,10 @@ a {
   opacity: 0.5;
 }
 /* mb 슬라이드 */
-.mbWinterSwiper{
+.mbWinterSwiper {
   padding-left: 50px;
 }
-.mbSlide{
+.mbSlide {
   position: relative;
   width: 100%;
   height: 900px;
@@ -350,20 +352,19 @@ a {
   font-family: "Josefin Sans", serif;
 }
 /* mb-product */
-.mb-product-container{
+.mb-product-container {
   position: relative;
   width: 90%;
   margin: 0 auto;
-
 }
-.mb-prdList{
+.mb-prdList {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-.mb-product-box{
+.mb-product-box {
   width: 33.33%; /* 한 줄에 3개씩 배치 */
   box-sizing: border-box;
   padding: 0 10px 50px 10px;
@@ -441,13 +442,14 @@ a {
   left: -50px;
 }
 /* 하단 */
+/* pc.ver 하단 */
 .footer {
   position: relative;
   display: block;
-  padding: 60px 80px;
   background-color: #6090bd;
 }
 .footer-inner {
+  padding: 60px 80px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -498,4 +500,50 @@ a {
   text-align: right;
   letter-spacing: 1px;
   padding-bottom: 20px;
+}
+/* mb.ver 하단 */
+.mb-footer-inner {
+  margin: auto;
+  width: 100%;
+  color: #fff;
+  /* background-color: yellowgreen; */
+  font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
+}
+.mb-footer-inner a {
+  color: #fff;
+}
+.mb-footer-first{
+  padding: 30px 40px;
+  line-height: 2.2;
+  border-bottom: 1px solid #fff;
+}
+.mb-footer-first span {
+  margin-right: 20px;
+}
+.aboutUs{
+  padding: 30px 40px;
+  border-bottom: 1px solid #fff;
+
+}
+.bank-toggle, .info-toggle{
+  padding: 30px 40px;
+  border-bottom: 1px solid #fff;
+
+}
+.insta-icon{
+  width: 40px;
+  margin: 30px 40px;
+  /* background-color: red; */
+}
+.insta-icon a img{
+  width: 100%;
+}
+.footer-menu{
+  padding: 0 40px;
+}
+.footer-menu li a{
+  font-size: 16px;
+}
+.copy{
+  padding: 20px 40px;
 }
