@@ -143,6 +143,7 @@ a {
 }
 .mb-logo {
   width: 20%;
+  min-width: 140px;
   /* background-color: violet; */
 }
 .mb-logo a img {
@@ -160,6 +161,7 @@ a {
 }
 .mb-right-con a img {
   width: 100%;
+  min-width:15px;
 }
 .mb-nav {
   position: fixed;
@@ -242,7 +244,23 @@ a {
 .mbSlide {
   position: relative;
   width: 100%;
+}
+/* .mbslide .swiper-wrapper{
+  width: 100%;
   height: 900px;
+} */
+.mbslide .swiper-wrapper .swiper-slide {
+  width: 100%;
+  /* height: 100%; */
+}
+.mbslide .swiper-wrapper .swiper-slide a {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+}
+.mbslide .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  display: block;
 }
 /* middle 이미지 박스 */
 .middle {
@@ -289,6 +307,35 @@ a {
   /* background-color: rgba(0,0,0,0.5); */
   color: #fff;
   text-align: center;
+}
+/* mb.ver middle 이미지 박스 */
+.mb-middle {
+  position: relative;
+  background-color: antiquewhite;
+}
+.mb-box {
+  margin-top: 30px;
+  width: 100%;
+  display: none;
+}
+.mb-box-left {
+  width: calc(100% / 2);
+}
+.mb-box-left a img {
+  width: 100%;
+  display: block;
+}
+.mb-box-right {
+  width: calc(100% / 2);
+  gap: 10px;
+}
+.mb-box-right li:first-child{
+  margin-bottom: 3%;
+}
+.mb-box-right li a img {
+  width: 100%;
+  display: block;
+  /* height: 100%; */
 }
 .title {
   width: 100%;
@@ -363,11 +410,6 @@ a {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-.mb-product-box {
-  width: 33.33%; /* 한 줄에 3개씩 배치 */
-  box-sizing: border-box;
-  padding: 0 10px 50px 10px;
 }
 /* 더보기 버튼 */
 .more-btn {
@@ -444,20 +486,19 @@ a {
 /* 하단 */
 /* pc.ver 하단 */
 .footer {
-  position: relative;
   display: block;
   background-color: #6090bd;
 }
-.footer-inner {
+.footer-wrap {
   padding: 60px 80px;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-.footer-inner .footer-left-top {
+.footer-left-top {
   padding-bottom: 30px;
 }
-.footer-inner .footer-left-top span {
+.footer-left-top span {
   position: relative;
   font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
   font-size: 12px;
@@ -465,7 +506,7 @@ a {
   line-height: 2;
   margin-right: 20px;
 }
-.footer-inner .footer-left-bottom span {
+.footer-left-bottom span {
   position: relative;
   font-family: "Newsreader", "Pretendard", "Wanted Sans Variable", "Wanted Sans", "Noto Sans KR", sans-serif;
   font-size: 11px;
@@ -473,7 +514,7 @@ a {
   line-height: 2;
   margin-right: 10px;
 }
-.footer-inner .footer-left-bottom span a {
+.footer-left-bottom span a {
   display: inline-block;
   color: #fff;
 }
@@ -492,7 +533,10 @@ a {
   font-size: 11px;
   color: #fff;
 }
-.footer-inner .footer-right ul li a {
+.footer-right {
+  position: relative;
+}
+.footer-right ul li a {
   position: relative;
   font-family: "Josefin Sans", serif;
   font-size: 14px;
@@ -512,38 +556,40 @@ a {
 .mb-footer-inner a {
   color: #fff;
 }
-.mb-footer-first{
-  padding: 30px 40px;
-  line-height: 2.2;
+.mb-footer-first {
+  padding: 50px 40px 30px;
+  line-height: 1.8;
   border-bottom: 1px solid #fff;
 }
 .mb-footer-first span {
   margin-right: 20px;
+  font-size: 12px;
 }
-.aboutUs{
+.aboutUs {
   padding: 30px 40px;
   border-bottom: 1px solid #fff;
-
 }
-.bank-toggle, .info-toggle{
+.bank-toggle,
+.info-toggle {
   padding: 30px 40px;
   border-bottom: 1px solid #fff;
-
 }
-.insta-icon{
-  width: 40px;
-  margin: 30px 40px;
+.insta-icon {
+  width: 30px;
+  margin: 30px 40px 20px 40px;
   /* background-color: red; */
 }
-.insta-icon a img{
+.insta-icon a img {
   width: 100%;
 }
-.footer-menu{
+.mb-footer-menu {
+  display: flex;
+  gap: 20px;
   padding: 0 40px;
 }
-.footer-menu li a{
-  font-size: 16px;
+.mb-footer-menu li a {
+  font-size: 14px;
 }
-.copy{
-  padding: 20px 40px;
+.copy {
+  padding: 15px 40px 40px 40px;
 }

@@ -4,7 +4,8 @@
   .mbWinterSwiper,
   .mb-product-container,
   .mb-nav,
-  .mb-footer-inner {
+  .mb-footer-inner,
+  .mb-middle .mb-box {
     display: none;
   }
 }
@@ -14,6 +15,11 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .mb-product-box {
+    width: 33.33%; /* 한 줄에 3개씩 배치 */
+    box-sizing: border-box;
+    padding: 0 10px 50px 10px;
+  }
   .pc-header {
     display: none !important;
   }
@@ -38,6 +44,9 @@
   .more-btn {
     display: none;
   }
+  .insta {
+    margin-top: 0px !important;
+  }
   .box {
     margin-top: 50px !important;
   }
@@ -51,8 +60,72 @@
   .footer-right {
     display: none;
   }
+  .footer-wrap {
+    display: none !important;
+  }
   .mb-footer-inner {
     display: block;
+  }
+}
+@media screen and (max-width: 760px) {
+  .middle .box {
+    display: none;
+  }
+  .mb-middle .mb-box {
+    display: flex;
+  }
+  .mb-product-box {
+    width: 50%; /* 한 줄에 2개씩 배치 */
+    box-sizing: border-box;
+    padding: 0 10px 50px 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .title {
+    height: 200px !important;
+  }
+  .title h3 {
+    padding-top: 110px !important;
+  }
+  .insta-inner .insta-title {
+    height: 180px !important;
+  }
+  .insta-inner .insta-title h3 {
+    padding-top: 100px !important;
+  }
+}
+@media screen and (max-width: 530px) {
+  .title {
+    height: 170px !important;
+  }
+  .title h3 {
+    padding-top: 90px !important;
+  }
+  .insta {
+    padding-bottom: 60px !important;
+  }
+  .title h3,
+  .insta-inner .insta-title h3 {
+    font-size: 30px !important;
+  }
+  .insta-inner .insta-title {
+    height: 160px !important;
+  }
+  .insta-inner .insta-title h3 {
+    height: 160px;
+    padding-top: 80px !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .mbWinterSwiper {
+    padding-left: 29px !important;
+  }
+  .mb-right-con {
+    width:65px !important;
+    gap: 10px !important;
+  }
+  .mb-logo{
+    margin-left: 15px;
   }
 }
 /* @media screen and (max-width: 600px) {

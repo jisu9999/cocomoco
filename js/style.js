@@ -6,17 +6,13 @@ window.onload = function () {
       hide: true,
     },
     autoplay: {
-      delay: 2200,
+      delay: 2000,
       disableOnInteraction: false,
     },
   });
   const swiper2 = new Swiper(".instaSlide", {
     slidesPerView: 1.5,
     spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
@@ -39,14 +35,24 @@ window.onload = function () {
       hide: true,
     },
     autoplay: {
-      delay: 2200,
+      delay: 2000,
       disableOnInteraction: false,
     },
   });
   const swiper = new Swiper(".mbWinterSwiper", {
-    slidesPerView: 3.5,
+    slidesPerView: 1.5,
     spaceBetween: 20,
     centeredSlides: false,
+    breakpoints: {
+      530: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
+      761: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+    },
   });
   const headerScroll = document.querySelector("header");
   window.addEventListener("scroll", function () {
