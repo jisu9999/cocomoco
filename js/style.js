@@ -6,15 +6,16 @@ window.onload = function () {
       hide: true,
     },
     autoplay: {
-      delay: 2000,
+      delay: 1900,
       disableOnInteraction: false,
     },
   });
   const swiper2 = new Swiper(".instaSlide", {
+    loop: true,
     slidesPerView: 1.5,
     spaceBetween: 20,
     autoplay: {
-      delay: 2000,
+      delay: 1800,
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -35,7 +36,7 @@ window.onload = function () {
       hide: true,
     },
     autoplay: {
-      delay: 2000,
+      delay: 1900,
       disableOnInteraction: false,
     },
   });

@@ -5,7 +5,7 @@ $(document).ready(function () {
       {
         left: 0,
       },
-      500
+      400
     );
   });
   // 모바일용 메뉴 클릭시
@@ -17,7 +17,7 @@ $(document).ready(function () {
   // 모바일용 메뉴 닫기 버튼
   $("#close-menu").click(function () {
     $(".mb-nav").animate({
-      left: "-500px", //메뉴가 왼쪽 밖으로 나가도록 한다.
+      left: "-400px", //메뉴가 왼쪽 밖으로 나가도록 한다.
     });
   });
 });

@@ -25,7 +25,6 @@ a {
   height: 80px;
   z-index: 99999;
   position: fixed;
-  /* background-color: #fff6e6; */
 }
 .header .inner .pc-header {
   width: 100%;
@@ -115,7 +114,8 @@ a {
   display: none;
   background-color: #fff;
   position: absolute;
-  top: 30px;
+  top: 25px;
+  left: -15px;
   border: 1px solid #333;
   padding: 20px 0px;
   z-index: 999;
@@ -166,8 +166,8 @@ a {
 .mb-nav {
   position: fixed;
   top: 0;
-  left: -500px;
-  width: 450px;
+  left: -400px;
+  width: 330px;
   height: 100vh;
   background-color: #fff6e6;
   overflow: hidden;
@@ -201,12 +201,13 @@ a {
 .close-menu {
   position: absolute;
   top: 30px;
-  left: 400px;
+  left: 280px;
   cursor: pointer;
 }
 .xi-close {
   font-size: 25px !important;
   color: #4f4f4f;
+  z-index: 99999;
 }
 /* 이미지 슬라이드 */
 .mainSlide {
@@ -239,7 +240,7 @@ a {
 }
 /* mb 슬라이드 */
 .mbWinterSwiper {
-  padding-left: 50px;
+  padding-left: 27px;
 }
 .mbSlide {
   position: relative;
@@ -329,7 +330,7 @@ a {
   gap: 10px;
 }
 .mb-box-right li:first-child{
-  margin-bottom: 3%;
+  margin-bottom: 3.5%;
 }
 .mb-box-right li a img {
   width: 100%;
@@ -435,7 +436,7 @@ a {
 .insta {
   width: 100%;
   margin-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   background-color: #fff6e6;
 }
 .insta-inner {

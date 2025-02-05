@@ -18,7 +18,7 @@
   .mb-product-box {
     width: 33.33%; /* 한 줄에 3개씩 배치 */
     box-sizing: border-box;
-    padding: 0 10px 50px 10px;
+    padding: 0 10px 50px 10px ;
   }
   .pc-header {
     display: none !important;
@@ -26,14 +26,14 @@
   .mb-header {
     display: block !important;
   }
-  .header.scrolled {
-    display: none;
-  }
   .mb-nav {
     display: block;
   }
   .mainSlide {
     display: none;
+  }
+  .mbWinterSwiper{
+    padding-left: 55px !important;
   }
   .mbSlide,
   .mbWinterSwiper,
@@ -45,7 +45,7 @@
     display: none;
   }
   .insta {
-    margin-top: 0px !important;
+    margin-top: -5px !important;
   }
   .box {
     margin-top: 50px !important;
@@ -67,17 +67,22 @@
     display: block;
   }
 }
+@media screen and (max-width: 800px){
+  .mbWinterSwiper{
+    padding-left: 42px !important;
+  }
+}
 @media screen and (max-width: 760px) {
-  .middle .box {
-    display: none;
-  }
-  .mb-middle .mb-box {
-    display: flex;
-  }
   .mb-product-box {
     width: 50%; /* 한 줄에 2개씩 배치 */
     box-sizing: border-box;
-    padding: 0 10px 50px 10px;
+    padding: 0 5px 50px 5px !important;
+  }
+  .mbWinterSwiper{
+    padding-left: 42px !important;
+  }
+  .mb-nav{
+    width: 400px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -88,37 +93,53 @@
     padding-top: 110px !important;
   }
   .insta-inner .insta-title {
-    height: 180px !important;
+    height: 170px !important;
   }
   .insta-inner .insta-title h3 {
     padding-top: 100px !important;
   }
 }
+@media screen and (max-width: 570px){
+  .mbWinterSwiper{
+    padding-left: 32px !important;
+  }
+}
 @media screen and (max-width: 530px) {
   .title {
-    height: 170px !important;
+    height: 160px !important;
   }
   .title h3 {
-    padding-top: 90px !important;
+    padding-top: 85px !important;
+  }
+  .middle .box {
+    display: none;
+  }
+  .mb-middle .mb-box {
+    display: flex;
   }
   .insta {
-    padding-bottom: 60px !important;
+    padding-bottom: 50px !important;
   }
   .title h3,
   .insta-inner .insta-title h3 {
     font-size: 30px !important;
   }
   .insta-inner .insta-title {
-    height: 160px !important;
+    height: 140px !important;
   }
   .insta-inner .insta-title h3 {
     height: 160px;
-    padding-top: 80px !important;
+    padding-top: 75px !important;
+  }
+}
+@media screen and (max-width: 450px){
+  .mbWinterSwiper {
+    padding-left: 26px !important;
   }
 }
 @media screen and (max-width: 390px) {
   .mbWinterSwiper {
-    padding-left: 29px !important;
+    padding-left: 25px !important;
   }
   .mb-right-con {
     width:65px !important;
